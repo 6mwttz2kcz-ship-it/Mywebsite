@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Untitled</title>
+    
+
+  </head>
+    
+  <body>
+  <!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مريم الفرج | Mariam Al-Faraj</title>
+‎    <!-- استيراد خط تجول من جوجل -->
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;500;700&display=swap" rel="stylesheet">
+‎    <!-- مكتبة Font Awesome للأيقونات -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --accent-color: #3498db;
+            --bg-light: #f4f7f6;
+            --text-dark: #333;
+            --white: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Tajawal', sans-serif;
+            background-color: var(--bg-light);
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        /* Header & Nav */
+        header {
+            background-color: var(--white);
+            padding: 1rem 5%;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: var(--accent-color);
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(rgba(44, 62, 80, 0.7), rgba(44, 62, 80, 0.7)), 
+                        url('https://images.unsplash.com/photo-1505751172107-573225a91bdc?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+            color: var(--white);
+            padding: 0 20px;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+            font-weight: 300;
+        }
+
+        /* Sections General */
+        section {
+            padding: 80px 10%;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            color: var(--primary-color);
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            width: 50px;
+            height: 4px;
+            background: var(--accent-color);
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        /* About Section */
+        .about-container {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        .about-text {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        /* Education Section */
+        .education-card {
+            background: var(--white);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            border-right: 5px solid var(--accent-color);
+            margin-bottom: 20px;
+        }
+
+        /* Contact Section */
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .contact-item {
+            text-align: center;
+            background: var(--white);
+            padding: 20px 40px;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        .contact-item:hover {
+            transform: translateY(-10px);
+        }
+
+        .contact-item i {
+            font-size: 2rem;
+            color: var(--accent-color);
+            margin-bottom: 10px;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--primary-color);
+            color: var(--white);
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.5rem; }
+            nav { display: none; } /* للتبسيط في هذا النموذج */
+            section { padding: 50px 5%; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">مريم الفرج</div>
+        <nav>
+            <ul>
+                <li><a href="#home">الرئيسية</a></li>
+                <li><a href="#about">من أنا</a></li>
+                <li><a href="#education">التعليم</a></li>
+                <li><a href="#contact">اتصل بي</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h1>مريم الفرج</h1>
+        <p>طالبة طب | جامعة كاتب شلبي، إزمير</p>
+    </section>
+
+    <section id="about">
+        <h2 class="section-title">من أنا</h2>
+        <div class="about-container">
+            <div class="about-text">
+                <p>مرحباً بك! أنا مريم الفرج، طالبة طب طموحة أدرس في جامعة كاتب شلبي بمدينة إزمير التركية. شغفي يكمن في علوم الطب والبحث العلمي، وأسعى دائماً لتطوير مهاراتي السريرية والمعرفية للمساهمة في تحسين الرعاية الصحية في المستقبل.</p>
+                <br>
+                <p>أهتم بمواكبة أحدث التقنيات الطبية وأطمح للتخصص في مجال يخدم الإنسانية ويساهم في إنقاذ الأرواح.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" style="background-color: #eef2f3;">
+        <h2 class="section-title">التعليم</h2>
+        <div class="education-card">
+            <h3>بكالوريوس في الطب والجراحة (Tıp Fakültesi)</h3>
+            <p><strong>جامعة كاتب شلبي (Izmir Katip Çelebi Üniversitesi)</strong></p>
+            <p>إزمير، تركيا</p>
+            <p><small>الحالة: طالبة حالية</small></p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2 class="section-title">تواصل معي</h2>
+        <div class="contact-info">
+            <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <p>البريد الإلكتروني</p>
+                <p>maryamalfarag12@gmail.com</p>
+            </div>
+            <div class="contact-item">
+                <i class="fab fa-linkedin"></i>
+                <p>لينكد إن</p>
+                <p>Maryam Al-Faraj</p>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <p>الموقع</p>
+                <p>إزمير، تركيا</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>جميع الحقوق محفوظة &copy; 2024 | مريم الفرج</p>
+    </footer>
+
+</body>
+</html>
+    
+  </body>
+  
+</html>
